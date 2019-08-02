@@ -1,6 +1,6 @@
 # Memory Usage Recorder App
 
-A C# application to record the memory usage of a tree of processes during a period of time.
+A C# console application to record the memory usage of a tree of processes during a period of time.
 
 To start recording a tree of processes, pass the name of the top process as first argument, for example:
 
@@ -75,3 +75,7 @@ The memory snapshots will be serialized in a JSON string, for example:
   ]
 }
 ```
+
+Data is collected using:
+
+* ManagementObjectSearcher class (WMI queries)
